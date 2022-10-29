@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import MyEditor from '../components/react/MyEditor';
+import MyEditor from '../components/react/MyEditor.tsx';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
@@ -46,7 +46,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
 			</p>
             <h1>Real-time code editor</h1>
-            <MyEditor client:idle />
+            <MyEditor client:load />
 		</main>
 		<Footer />
 	</body>

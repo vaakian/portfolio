@@ -17,4 +17,9 @@ export default defineConfig({
     },
   },
   integrations: [mdx(), sitemap(), vue(), react()],
+  vite: {
+    ssr: {
+      noExternal: ['@codesandbox/sandpack-react', '@codesandbox/sandpack-client'],
+    },
+  },
 })
