@@ -3,6 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: 'Using MDX'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 02 2022'
+# heroImage: '/placeholder-hero.jpg'
 heroImage: '/placeholder-hero.jpg'
 ---
 
@@ -20,7 +21,7 @@ Here is how you import and use a UI component inside of MDX.
 When you open this page in the browser, you should see the clickable button below.
 
 import CounterReact from '../../components/react/Counter.tsx';
-import CounterVue from '../../components/Vue/Counter.vue';
+import CounterVue from '../../components/vue/Counter.vue';
 
 <CounterReact client:load />
 
@@ -28,7 +29,7 @@ import CounterVue from '../../components/Vue/Counter.vue';
 
 
 So the shiki theme on  `Vitepress` is a bug that overrides the background of the block? 
-```tsx
+```typescript
 import  { CSSProperties, useState } from 'react'
 
 const style: CSSProperties = {

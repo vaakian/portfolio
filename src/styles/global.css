@@ -65,3 +65,7 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
+.astro-code {
+    background-color: #eeeeee70 !important;
+    border-radius: 8px;
+}
