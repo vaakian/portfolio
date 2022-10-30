@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MyEditor from '../components/react/MyEditor.tsx';
+import DeferedInput from '../components/react/DeferedInput.tsx';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
@@ -47,6 +48,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 			</p>
             <h1>Real-time code editor</h1>
             <MyEditor client:load />
+            <h1>React component: expensive computing using `deferredValue`</h1>
+            <DeferedInput client:visible />
 		</main>
 		<Footer />
 	</body>

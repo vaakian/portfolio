@@ -21,11 +21,14 @@ Here is how you import and use a UI component inside of MDX.
 When you open this page in the browser, you should see the clickable button below.
 
 import CounterReact from '../../components/react/Counter.tsx';
+import DeferredInput from '../../components/react/DeferredInput.tsx';
 import CounterVue from '../../components/vue/Counter.vue';
 
 <CounterReact client:load />
 
 <CounterVue  client:load />
+
+<DeferredInput client:load />
 
 
 So the shiki theme on  `Vitepress` is a bug that overrides the background of the block? 
